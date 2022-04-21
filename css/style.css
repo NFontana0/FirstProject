@@ -1,0 +1,705 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.body{
+    height: 100vh;
+    background-color: lightgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+/* .layout__wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 9% 82% 9% ;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+} */
+
+/* Aca empieza el header */
+
+.header{
+    grid-area: header;    
+    background-color: black; 
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50% ;
+    grid-template-areas: 
+        "contenedor navbar";
+    width: 100%;
+    height: auto;
+}
+
+.logo__img{
+    transform: scale(0.8);
+}
+
+.contenedor {
+    grid-area: contenedor;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.header__logo {
+    margin-right: 5%;
+    
+}
+
+.header__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    height: 100%;
+}
+
+.title__h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar { 
+    grid-area: navbar;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end ;
+    padding-bottom: 2%;
+}
+
+.navbar__menu {
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    
+}
+
+.menu__link {
+    text-decoration: none;
+    color: white;
+}
+
+/* Aca empieza el main */
+.main {
+    grid-area: main;
+    background-color: lightgray;
+    display: grid;
+    grid-template-rows: 3% 27% 8% 4% 60%;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+        "consu"
+        "foto"
+        "form"
+        "desta"
+        "prop";
+}
+
+.bottom {
+    grid-area: consu;
+    text-decoration: none;
+    color: black;
+    justify-self: center;
+    align-self: center;
+}
+
+.fotoprincipal {
+    grid-area: foto;
+
+}   
+
+.fotoprincipal__img {
+    width: 100%;
+    height: 90%;
+}
+
+.forms {
+    grid-area: form;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0% 15% 0% 15%;    
+}
+
+.forms__titles {
+    font-size:large;
+    font-weight: bold;
+}
+
+.forms__venta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.precio__desde {
+
+    border-style: inset;
+    border-width: 3px;
+}
+
+.precio__hasta {
+    
+    border-style: inset;
+    border-width: 3px;
+}
+
+.submit_reset {
+    border-style: inset;
+    border-width: 3px;
+    font-size: medium;
+    color: white;
+    background-color: black;
+}
+.submit_resett {
+    border-style: inset;
+    border-width: 3px;
+    font-size: medium;
+    color: white;
+    background-color: black;
+}
+
+
+.destacadas__title {
+    grid-area: desta;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.destacadas {
+    grid-area: prop;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+        "foto1 foto1"
+        "foto2 foto2";
+        width: 100%;
+        height: 100%;
+}
+
+.fotosdestacadas12 {
+    grid-area: foto1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 30%;
+
+}
+
+.fotosdestacadas34 {
+    grid-area: foto2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.uno__img {
+    width: 500px;
+    height: 500px;
+}
+
+.dos__img {
+    width: 500px;
+    height: 500px;
+}
+.tres__img {
+    width: 500px;
+    height: 500px;
+}
+.cuatro__img {
+    width: 500px;
+    height: 500px;
+}
+
+
+
+
+/* Aca empieza el footer */
+
+.footer {
+    background-color: black; 
+    color: white;
+    grid-area: footer;
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-columns: 18% 18% 18% 18% 28%;
+    grid-template-areas: 
+        "fb1 fb2 fb3 fb4 titulo"
+        "fb1 fb2 fb3 fb4 redes"
+        "fb1 fb2 fb3 fb4 volver";
+    width: 100%;
+    height: auto;
+}
+
+.footer__button1 {
+    grid-area: fb1;
+}
+.footer__button2 {
+    grid-area: fb2;
+}
+.footer__button3 {
+    grid-area: fb3;
+}
+.footer__button4 {
+    grid-area: fb4;
+}
+.redes__title {
+    grid-area: titulo;
+}
+.redes__redes {
+    grid-area: redes;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 80%;
+    margin-top: 3%;
+
+}
+
+.redes__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 78%;
+
+
+}
+
+.redes {
+    margin-left: 5%;
+}
+
+.footer__button {
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+.footer__button--link {
+    text-decoration: none;
+    color: white;
+}
+
+
+.fotoprincipal__img {
+    width: 100%;
+}
+
+
+.props__container {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr ;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "props1"
+        "props2"
+        "props3"
+        "props4";
+}
+
+.props {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 75%;
+    margin-top: 2%;
+
+}
+
+.props__reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 100%;
+    width: 75%;
+    margin-top: 2%;
+}
+
+.props__linkimg {
+    width: 100%;
+    height: 100%;
+}
+
+.props__img {
+    width: 500px;
+    height: 500px;
+}
+
+
+.props__div--piframe {
+    width: 100%;
+    height: auto;
+}
+
+.props__title {
+    height: auto;
+}
+
+.props__title--title {
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: solid 1px;
+}
+
+.props__text {
+    width: 100%;
+    list-style: none;
+    padding-bottom: 5px;
+    border-bottom: solid 1px;
+}
+
+.props__iframe {
+    width: 100%;
+    padding-top: 5px;
+}
+
+.mision {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-style:double;
+    width: 60%;
+    margin-top: 3%;
+    margin-left: 18%;
+    margin-right: 18%;
+
+}
+
+.mision__texto {
+    font-style: italic;
+}
+
+.mision__title {
+    font-size: large;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.horarios {
+    margin-bottom: 3%;
+    margin-left: 26%;
+    margin-right: 26%;
+}
+
+.horarios__title {
+    margin-top: 3%;
+    margin-left: 46.5%;
+}
+
+.contact__datos {
+    text-decoration: none;
+    color: white;
+}
+
+.main__contact {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: initial;
+    background-color: lightgray;
+}
+
+.contact__form {
+    margin: 1% 2% 0% 2%;
+    padding-bottom: 1%;
+}
+
+.form__title {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.form__text {
+    font-style: italic;
+}
+
+.img__img {
+    width: 600px;
+    height: 450px;
+}
+
+
+.general {
+    max-width: 100%;
+    max-height: 100%;
+}
+.row {
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+        "row1 row1"
+        "row2 row2"
+        "row3 row3"
+        "row4 row4"
+        "row5 row5";
+}
+
+.row1 {
+    grid-area: row1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.row2 {
+    grid-area: row2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.row3 {
+    grid-area: row3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.row4 {
+    grid-area: row4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.row5 {
+    grid-area: row5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 360px) {
+
+    .header{
+
+        display: grid;
+        grid-template-rows: 25vh;
+        grid-template-columns: 50% 50% ;
+        height: auto;       
+    }
+
+    .header__logo {
+        height: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .logo__img{
+        width: 100%;
+        height: 90px;
+    }
+    
+    .header__title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        margin-bottom: 4%;
+        
+    }
+    .title__h1 {
+        font-size: 80%;
+    }
+
+    .title__h3 {
+        font-size: 80%;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        width: 100%;
+        height: auto;  
+        align-items: end ; 
+    }
+    
+    .navbar { 
+        justify-content: end;
+        align-items: center ;
+        padding-bottom: 2%;
+    }
+    
+    .navbar__menu {
+        flex-direction: column;
+    }
+    
+    .main {
+        grid-template-rows: 3% 17% 38% 4% 38%;
+    }
+    .bottom {
+        font-size: 90%;
+    }
+    
+    .fotoprincipal {
+        max-width: 100%;
+        
+    }
+
+    .fotoprincipal__img {
+        width: 100%;
+        height: 85%;
+    }
+
+    .forms {
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 80%;
+    }
+    
+    .forms__titles {
+        margin-bottom: 3%;
+        font-size: 130%;
+    }
+    
+    .precio__desde {
+        width: 50%;
+    }
+    
+    .precio__hasta {
+        width: 50%;
+    }
+
+    .submit_reset {
+        width: 30%;
+    }
+
+    .submit_resett {
+        width: 40%;
+    }
+
+    .destacadas__title {
+        font-size: 80%;
+    }
+    
+    .uno__img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .dos__img {
+        width: 150px;
+        height: 150px;
+    }
+    .tres__img {
+        width: 150px;
+        height: 150px;
+    }
+    .cuatro__img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .footer {
+        grid-template-rows: 20% 20% 20% 35% 1%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+            "titulo titulo"
+            "fb1 fb2"
+            "fb3 fb4"
+            "redes redes"
+            "volver volver";
+        height: auto;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .footer__redes{
+        grid-area: titulo;
+        width: 100%;
+    }
+
+    .redes__redes {
+        justify-content: center ;
+        width: 100%;
+    }
+
+    .redes__img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+
+    .props {
+        flex-direction: column;
+    }
+
+    .props__reverse {
+        flex-direction: column;
+    }
+
+    .props__img {
+        width: 250px;
+        height: 150px;
+        padding-top: 5%;
+    }
+
+    .props__text {
+        font-size: 80%;
+    }
+
+    .props__iframe {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .mision {
+        font-size: 80%;
+        width: 95%;
+        margin-top: 1%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    
+    .mision__title {
+        font-size: medium;
+    }
+    
+    .horarios {
+        display: flex;
+        flex-direction: column;
+        border-collapse: collapse;
+        margin-bottom: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .img__img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .general {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .row {
+        grid-template-rows: 5% 5% 5% 5% 5%;
+        grid-template-columns: 10% 10%;
+    }
+    
+
+}

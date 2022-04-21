@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>LA INMOBILIARIA</title>
+    <link rel="shortcut icon" href="../wireframe/archivos/btc.JPG">
+</head>
+
+<body class="body">
+    <div class="layout__wrapper">
+    <header class="header" id="top">
+        
+        <div class="contenedor">
+            <div class="header__logo">    
+                <a href="index.html" class="logo__link">
+                    <img src="./archivos/logo.jpg" alt="logo la inmobiliaria" class="logo__img">
+                </a>     
+            </div>    
+            <div class="header__title">    
+                <h1 class="title__h1">LA INMOBILIARIA</h1>
+                <h3 class="title__h3">11-4444-4444</h3>
+            </div>   
+        </div>
+            
+    
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li class="menu__item">
+                    <a href="index.html" class="menu__link">Home</a>
+                </li>
+
+                <li class="menu__item">    
+                    <a href="./pages/propiedades.html" class="menu__link">Propiedades</a>
+                </li>
+                
+                <li class="menu__item">
+                    <a href="./pages/nosotros.html" class="menu__link">Nosotros</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="./pages/contacto.html" class="menu__link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="bottom">
+                <a href="#bottom" class="bottom">Consultas? Dejanos tu mail</a>
+        </div>
+        <div class="fotoprincipal">
+            <img src="./archivos/foto principal.JPG" alt="foto principal" class="fotoprincipal__img">
+        </div>
+
+        <div class="forms">
+            <div class="forms__venta">
+                <form>
+                <div class="forms__titles">
+                <label>Tipo de contrato</label>
+                </div>
+                <div class="forms__venta">
+                <div class="forms__venta--venta">Venta</div>
+                <input type="checkbox" name="acepta" value="1">
+                <div class="forms__venta--venta">Alquiler</div>
+                <input type="checkbox" name="acepta" value="1">
+                </div>
+                </form>
+            </div>
+            <br>
+            <div class="forms__tipo">
+                <form>
+                <div class="forms__titles">
+                <label>Tipo de propiedad</label>
+                </div>
+                
+                <select name="Propiedades" class="forms__tipo--prop">
+                    <option value=""></option>
+                    <option value="Departamento">Departamento</option>
+                    <option value="Pasillo Horizontal">PH</option>
+                    <option value="Casa">Casa</option>
+                    <option value="Chalet">Chalet</option>
+                    <option value="Terreno">Terreno</option>
+                </select>
+                </form>
+            </div>
+            <br>
+            <div class="forms__ubicacion">
+                <form>
+                <div class="forms__titles">
+                <label>Ubicacion</label>
+                </div>
+
+                <select name="Ubicacion" class="forms__ubicacion--ubi">
+                    <option value=""></option>
+                    <option value="Zona Oeste">Zona Oeste</option>
+                    <option value="Zona Norte">Zona Norte</option>
+                    <option value="Zona Sur">Zona Sur</option>
+                    <option value="Capital Federal">Caba</option>
+                    <option value="Interior">Interior</option>
+                </select>
+                </form>
+            </div>
+            <br>
+            <div class="forms__precio">
+                <form>
+                
+                <div class="forms__titles">
+                <label class="forms__titles">Rango de precio</label>
+                </div>
+
+                <div class="forms__precio--precio">
+                <input type="number" placeholder="Desde" class="precio__desde">
+                <input type="number" placeholder="Hasta" class="precio__hasta">
+                </div>
+                </form>
+            
+            <br>
+            <form>
+                <input type="submit" value="Avanzar" class="submit_reset">
+                <input type="reset" value="Limpiar datos" class="submit_resett">
+            </form>
+            </div>
+        </div>
+
+        
+            <div class="destacadas__title">
+                <h2 class="title__title">PROPIEDADES DESTACADAS</h2>
+            </div>
+            
+            <div class="destacadas">
+            <div class="fotosdestacadas12">
+                <div class="destacadas__1">
+                    <img src="./propiedades/prop1.jpg" alt="foto propiedad 1" class="uno__img">
+                </div>
+                <div class="destacadas__2">
+                    <img src="./propiedades/prop2.jpg" alt="foto propiedad 2" class="dos__img">
+                </div>
+            </div>
+
+            <div class="fotosdestacadas34">
+                <div class="destacadas__3">
+                    <img src="./propiedades/prop3.jpg" alt="foto propiedad 3" class="tres__img">
+                </div>
+                <div class="destacadas__4">
+                    <img src="./propiedades/prop4.jpg" alt="foto propiedad 4" class="cuatro__img">
+                </div>    
+            </div>
+            </div>
+    </main>
+
+    <footer class="footer">
+        
+                <div class="footer__button footer__button1" >
+                    <a href="index.html" class="footer__button--link">Home</a>
+                </div>
+
+                <div class="footer__button footer__button2">    
+                    <a href="./pages/propiedades.html" class="footer__button--link">Propiedades</a>
+                </div>
+
+                <div class="footer__button footer__button3">
+                    <a href="./pages/nosotros.html" class="footer__button--link">Nosotros</a>
+                </div>
+
+                <div class="footer__button footer__button4">
+                    <a href="./pages/contacto.html" class="footer__button--link">Contacto</a>
+                </div>
+        
+        <div class="footer__redes">
+            <h3 class="redes__title">LA INMOBILIARIA</h3>
+        </div>
+        <div class="redes__redes">
+        <div class="redes">
+            <a href="https://facebook.com" target="_blank" class="redes__link">
+                <img src="./archivos/facebookicon.png" alt="facebook icon" class="redes__img">               
+            </a>
+        </div>
+        <div class="redes">
+            <a href="https://instagram.com" target="_blank" class="redes__link">
+                <img src="./archivos/instagramicon.png" alt="instagram icon" class="redes__img">               
+            </a>
+        </div>
+        <div class="redes">
+            <a href="https://twitter.com" target="_blank" class="redes__link">
+                <img src="./archivos/twittericon.png" alt="twitter icon" class="redes__img">               
+            </a>
+        </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
