@@ -1,4 +1,4 @@
-<img src="../archivos/foto principal.jpg" width="100px">
+<img src="../archivos/logo.jpg" width="100px">
 
 # First Projec
 
