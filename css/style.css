@@ -36,6 +36,14 @@
 
 .logo__img{
     transform: scale(0.8);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.logo__img:hover{
+    transform: scale(0.9);
+
 }
 
 .contenedor {
@@ -80,12 +88,19 @@
     flex-direction: row;
     justify-content: space-evenly;
     width: 70%;
-    
 }
 
 .menu__link {
     text-decoration: none;
     color: white;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.menu__link:hover {
+    font-weight: bolder;
+    border-bottom: solid 1px white;
 }
 
 /* Aca empieza el main */
@@ -159,6 +174,9 @@
     font-size: medium;
     color: white;
     background-color: black;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
 }
 .submit_resett {
     border-style: inset;
@@ -166,8 +184,20 @@
     font-size: medium;
     color: white;
     background-color: black;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
 }
 
+.submit_reset:hover {
+    background-color: white;
+    color: black;
+}
+
+.submit_resett:hover {
+    background-color: white;
+    color: black;
+}
 
 .destacadas__title {
     grid-area: desta;
@@ -290,6 +320,14 @@
 .footer__button--link {
     text-decoration: none;
     color: white;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.footer__button--link:hover {
+    font-weight: bolder;
+    border-bottom: solid 1px white;
 }
 
 
@@ -431,7 +469,6 @@
     width: 600px;
     height: 450px;
 }
-
 
 .general {
     max-width: 100%;
