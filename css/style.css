@@ -65,6 +65,19 @@
     justify-content: center;
     color: white;
     height: 100%;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .title__h3 {
@@ -253,8 +266,6 @@
 }
 
 
-
-
 /* Aca empieza el footer */
 
 .footer {
@@ -294,7 +305,6 @@
     justify-content: flex-end;
     width: 80%;
     margin-top: 3%;
-
 }
 
 .redes__title {
@@ -302,20 +312,26 @@
     flex-direction: row;
     justify-content: flex-end;
     width: 78%;
-
-
 }
 
 .redes {
     margin-left: 5%;
 }
 
+.redes__img {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.redes__img:hover {
+    transform: scale(1.1);
+}
+
 .footer__button {
     align-self: center;
     justify-self: center;
 }
-
-
 
 .footer__button--link {
     text-decoration: none;
@@ -330,11 +346,9 @@
     border-bottom: solid 1px white;
 }
 
-
 .fotoprincipal__img {
     width: 100%;
 }
-
 
 .props__container {
     display: grid;
@@ -737,6 +751,4 @@
         grid-template-rows: 5% 5% 5% 5% 5%;
         grid-template-columns: 10% 10%;
     }
-    
-
 }
