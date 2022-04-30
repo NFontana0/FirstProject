@@ -3,6 +3,10 @@
     padding: 0%;
 }
 
+html { 
+    font-size: 62.5%;
+}
+
 .body{
     height: 100vh;
     background-color: lightgray;
@@ -11,6 +15,7 @@
 }
 
 /* Aca empieza el header */
+
 
 .logo__img{
     transform: scale(0.6);
@@ -31,11 +36,15 @@
 }
 .logo__title {
     color: gray;
+    font-size: 1.4rem;
 
 }
 
+.estilo__div {
+    height: 100px;
+}
 
- .menu__link {
+.menu__link {
     text-decoration: none;
     color: white;
     transition-property: all;
@@ -57,7 +66,7 @@
     grid-area: main;
     background-color: lightgray;
     display: grid;
-    grid-template-rows: 3% 27% 8% 4% 60%;
+    grid-template-rows: 3% 22% 8% 4% 60%;
     grid-template-columns: 100%;
     grid-template-areas: 
         "consu"
@@ -250,7 +259,8 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 78%;
+    width: 85%;
+    color: gray;
 
 
 }
@@ -268,7 +278,7 @@
 
 .footer__button--link {
     text-decoration: none;
-    color: white;
+    color: gray;
     transition-property: all;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
@@ -276,9 +286,11 @@
 
 .footer__button--link:hover {
     font-weight: bolder;
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px gray;
+    color: gray;
 }
 
+/* Aca termina el footer */
 
 .fotoprincipal__img {
     width: 100%;
@@ -389,29 +401,78 @@
     margin-left: 46.5%;
 }
 
-.contact__datos {
-    text-decoration: none;
-    color: white;
+/* SECCIÓN CONTACTO */
+
+.main__container--contacto{
+    display: flex;
+    justify-content: center;
 }
 
-.main__contact {
-    font-family: 'Courier New', Courier, monospace;
-    font-style: initial;
-    background-color: lightgray;
+.form{
+    width: 50%;
+    margin: 5% 0 5% 0;
+    padding: 3% 7% 3% 7%;
+    border: 1px solid #CED5D7;
+    border-radius: 2%;
+    background-color: white;
+    box-shadow: 0px 5px 10px #B5C1C5, 0 0 0 10px #EEF5F7 inset;
 }
 
-.contact__form {
-    margin: 1% 2% 0% 2%;
-    padding-bottom: 1%;
+.form__container--general{
+    margin: 0;
 }
 
-.form__title {
-    font-size: large;
-    font-weight: bolder;
+.form__fieldset{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10% 10% 10% 10%;
 }
 
-.form__text {
-    font-style: italic;
+.fieldset__text{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.form__label{
+    display: block;
+    font-size: 1.2rem;
+}
+
+.form__container{
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.form__label--checkbox{
+    display: inline;
+}
+
+.form__checkbox{
+    display: inline;
+}
+
+.form__button{
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px 20px 0 0;
+    color: rgba(255, 255, 255, 0.562); 
+}
+
+.form__button:hover{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.form__item{
+    width: 100%;
+}
+
+.form__item--textarea{
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
 }
 
 .img__img {
@@ -472,7 +533,7 @@
 
 @media (max-width: 360px) {
 
-    .header{
+    /* .header{
 
         display: grid;
         grid-template-rows: 25vh;
@@ -526,7 +587,7 @@
     .navbar__menu {
         flex-direction: column;
     }
-    
+     */
     .main {
         grid-template-rows: 3% 17% 38% 4% 38%;
     }

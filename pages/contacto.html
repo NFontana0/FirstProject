@@ -47,30 +47,48 @@
             </nav>
         </header>
 
-        <main class="main__contact">
-            <h4>Contactanos</h4>
-
-            <form class="contact__form" action="">
-                <fieldset>
-                    <legend class="form__title">Formulario de contacto</legend>
-                    <label for="nombre_apellido">Nombre y apellido</label><br>
-                    <input type="text" name="nombre_apellido" required><br>
-                    <label for="telefono">Teléfono</label><br>
-                    <input type="number" name="telefono" required><br>
-                    <label for="email">Email</label><br>
-                    <input type="email" name="mail" required><br>
-                    <label for="asunto">Asunto</label><br>
-                    <input type="text" name="asunto"><br>
-                    <label for="mensaje">Mensaje</label><br>        
-                    <textarea name="mensaje" cols="30" rows="10" placeholder="Deje aqui su mensaje" required></textarea><br>
-                    <input type="checkbox" name="tyc">
-                    <label class="form__text" for="tyc">Acepto los términos y condiciones</label><br>
-                    <input type="checkbox" name="noticias" checked>
-                    <label class="form__text" for="noticias" >Acepto suscribirme al newsletter</label><br>
-                    <input class="submit_resett" type="reset" value="Limpiar">
-                    <input class="submit_reset" type="submit" value="Enviar">
-                </fieldset>
-            </form>
+        <main>
+            <div class="main__container--contacto">
+                <form class="form" action="">
+                    <div class="form__container--general">
+                        <fieldset class="form__fieldset">
+                        <legend class="fieldset__text">Formulario de contacto</legend>
+                            <div class="form__container">
+                                <label class="form__label" for="nombre_apellido">Nombre y apellido</label>
+                                <input type="text" class="form__item" name="nombre_apellido" required>
+                            </div>
+                            <div class="form__container">
+                                <label class="form__label" for="telefono">Teléfono</label>
+                                <input class="form__item" type="number" name="telefono" required>
+                            </div>
+                            <div class="form__container">
+                                <label class="form__label" for="email">Email</label>
+                                <input class="form__item" type="email" name="mail" required>
+                            </div>
+                            <div class="form__container">
+                                <label class="form__label" for="asunto">Asunto</label>
+                                <input class="form__item" type="text" name="asunto">
+                            </div>
+                            <div class="form__container">
+                                <label class="form__label" for="mensaje">Mensaje</label>       
+                                <textarea class="form__item--textarea" name="mensaje" placeholder="Deje aqui su mensaje" required></textarea>
+                            </div>
+                            <div class="form__container">
+                                <input class="form__checkbox" type="checkbox" name="tyc">
+                                <label class="form__label--checkbox" for="tyc">Acepto los términos y condiciones</label>
+                            </div>
+                            <div class="form__container">
+                                <input class="form__checkbox" type="checkbox" name="noticias" checked>
+                                <label class="form__label--checkbox" for="noticias" >Acepto suscribirme al newsletter</label>
+                            </div>
+                            <div class="form__container">
+                                <input class="form__button btn btn-dark" type="reset" value="limpiar">
+                                <input class="form__button btn btn-dark" type="submit" value="enviar">
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
         </main>
 
         <footer class="footer">
