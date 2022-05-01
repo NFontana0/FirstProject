@@ -4,215 +4,251 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     
     <link rel="stylesheet" href="../css/style.css">
     
     <title>Propiedades</title>
 </head>
 <body class="body">
-    <div class="layout__wrapper">
-        <header class="header" id="top">
+    <div class="container-fluid">
+        <header class="row sticky-top" >
             
-            <div class="contenedor">
-                <div class="header__logo">    
-                    <a href="../index.html" class="logo__link">
-                        <img src="../archivos/logo.jpg" alt="logo la inmobiliaria" class="logo__img">
-                    </a>     
-                </div>    
-                <div class="header__title">    
-                    <h1 class="title__h1">LA INMOBILIARIA</h1>
-                    <h3 class="title__h3">11-4444-4444</h3>
-                </div>   
-            </div>
-                
-            <nav class="navbar">
-                <ul class="navbar__menu">
-                    <li class="menu__item">
-                        <a href="../index.html" class="menu__link">Home</a>
-                    </li>
-    
-                    <li class="menu__item">    
-                        <a href="../pages/propiedades.html" class="menu__link">Propiedades</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="../pages/nosotros.html" class="menu__link">Nosotros</a>
-                    </li>
-    
-                    <li class="menu__item">
-                        <a href="../pages/contacto.html" class="menu__link">Contacto</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-expand-md row">
+                <div class="container-fluid estilo__div">
+                    <a class="navbar-brand logo__link col-lg-4 col-4 p-0 m-0 h-auto" href="../index.html">
+                        <img class="d-inline-block align-text-center logo__img img-fluid" src="../archivos/logo.jpg" alt="logo la inmobiliaria">
+                        <p class="logo__title p-0 m-0">LA INMOBILIARIA</p>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body nav-nar">
+                            <ul class="navbar-nav justify-content-end flex-grow-1  pe-3 navbar__menu">
+                                <li class="nav-item">
+                                    <a href="../index.html" class="nav-link menu__link">Home</a>
+                                </li>
+                                <li class="nav-item menu__item">
+                                    <a href="../pages/propiedades.html" class="nav-link menu__link">Propiedades</a>
+                                </li>
+                                <li class="nav-item menu__item">
+                                    <a href="../pages/nosotros.html" class="nav-link menu__link">Nosotros</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="../pages/contacto.html" class="nav-link menu__link">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </header>
 
     <main>
         <div class="props__container">
-            <article class="props props1">
-            
-                <div class="props__linkimg">
-                    <a class="props__link" href="../pages/propiedad1.html" target="_blank">
-                        <img  class="props__img"  src="../propiedades/prop1.jpg" alt="foto propiedad 1">
-                    </a>
-                </div>    
-                
-                <div class="props__div--piframe">
-                    <div class="props__title">
-                        <h3 class="props__title--title">Propiedad 1</h3>
-                    </div>
+            <article class="container props props1">
+                <div class="row">
 
-                    <ul class="props__text">
-                        <li> CHALET EN INMEJORABLE UBICACIÓN</li>
-                        <li>PLANTA BAJA</li>
-                        <li>LIVING COMEDOR</li>
-                        <li>ESCRITORIO</li>
-                        <li>3 DORMITORIOS</li>
-                        <li>BAÑO COMPLETO</li>
-                        <li>GARAGE CUBIERTO 2 AUTOS</li>
-                        <li>COCINA</li>
-                        <li>COMEDOR DIARIO</li>
-                        <li>FONDO</li>
-                        <li>PLANTA ALTA</li>
-                        <li>ESTAR ESTILO SUM - BAÑO - 2 TERRAZAS -LAVADERO</li>
-                    </ul>
+                    <div class="col-lg-6 col-sm-12 props__linkimg">
+                        <a class="props__link" href="../pages/propiedad1.html" target="_blank">
+                            <img  class="props__img"  src="../propiedades/prop1.jpg" alt="foto propiedad 1">
+                        </a>
+                    </div>    
+                
+                    <div class="col-lg-6 col-sm-12 props__div--piframe">
                     
-                    <iframe class="props__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13135.383983241743!2d-58.3702778!3d-34.6080556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe16921ef0545f86d!2sCasa%20Rosada!5e0!3m2!1ses!2sar!4v1649609947261!5m2!1ses!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="row props__title">
+                            <h3 class="col props__title--title">Propiedad 1</h3>
+                        </div>
+
+                        <div class="row">
+                            <ul class="col props__text">
+                                <li> CHALET EN INMEJORABLE UBICACIÓN</li>
+                                <li>PLANTA BAJA</li>
+                                <li>LIVING COMEDOR</li>
+                                <li>ESCRITORIO</li>
+                                <li>3 DORMITORIOS</li>
+                                <li>BAÑO COMPLETO</li>
+                                <li>GARAGE CUBIERTO 2 AUTOS</li>
+                                <li>COCINA</li>
+                                <li>COMEDOR DIARIO</li>
+                                <li>FONDO</li>
+                                <li>PLANTA ALTA</li>
+                                <li>ESTAR ESTILO SUM - BAÑO - 2 TERRAZAS -LAVADERO</li>
+                            </ul>
+                        </div>
+
+                        <div class="row">
+                            <iframe class="col props__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13135.383983241743!2d-58.3702778!3d-34.6080556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe16921ef0545f86d!2sCasa%20Rosada!5e0!3m2!1ses!2sar!4v1649609947261!5m2!1ses!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>    
+            </article>
+            <article class="container props__reverse props2">
+                <div class="row">
+                
+                    <div class="col-lg-6 col-sm-12 props__div--piframe">
+                    
+                        <div class="row props__title">
+                            <h3 class="col props__title--title">Propiedad 2</h3>
+                        </div>
+                        
+                        <div class="row">
+                            <ul class="col props__text">
+                                <li> Coqueto semipiso de 4 ambientes en zona céntrica de Buenos Aires.</li>
+                                <li>3 dormitorios , el principal en suite con vestidor y ante baño</li>
+                                <li>Living-comedor</li>
+                                <li>Cocina-comedor</li>
+                                <li>Balcon al frente y contrafrente</li>
+                                <li>Segundo baño completo</li>
+                                <li> Cochera cubierta para 2 autos</li>
+                                <li>Baulera</li>
+                                <li>Ventanas con DVH</li>
+                                <li>Calefacción individual con radiadores peisa</li>
+                                <li>Pisos de eucalipto plastificados</li>
+                            </ul>  
+                        </div>
+                        
+                        <div class="row">
+                            <iframe class="col props__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27832.672470271697!2d-58.3760848395298!3d-34.6087638471071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53386f2ac88991a9!2sTeatro%20Col%C3%B3n!5e0!3m2!1ses!2sar!4v1649610058638!5m2!1ses!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>  
+
+                    </div>
+                        
+                        <div class="col-lg-6 col-sm-12 props__linkimg">
+                            <img class="props__img" src="../propiedades/prop2.jpg" alt="foto propiedad 2">
+                        </div>
                 </div>
             </article>
-            <article class="props__reverse props2">
-                
-                <div class="props__linkimg">
-                    <img class="props__img" src="../propiedades/prop2.jpg" alt="foto propiedad 2">
-                </div>
 
-                <div class="props__div--piframe">
-                    <div class="props__title">
-                        <h3 class="props__title--title">Propiedad 2</h3>
+            <article class="container props props3">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 props__linkimg">
+                        <img class="props__img" src="../propiedades/prop3.jpg" alt="foto propiedad 3">
                     </div>
-
-                    <ul class="props__text">
-                        <li> Coqueto semipiso de 4 ambientes en zona céntrica de Buenos Aires.</li>
-                        <li>3 dormitorios , el principal en suite con vestidor y ante baño</li>
-                        <li>Living-comedor</li>
-                        <li>Cocina-comedor</li>
-                        <li>Balcon al frente y contrafrente</li>
-                        <li>Segundo baño completo</li>
-                        <li> Cochera cubierta para 2 autos</li>
-                        <li>Baulera</li>
-                        <li>Ventanas con DVH</li>
-                        <li>Calefacción individual con radiadores peisa</li>
-                        <li>Pisos de eucalipto plastificados</li>
-                    </ul>    
-
-                    <iframe class="props__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27832.672470271697!2d-58.3760848395298!3d-34.6087638471071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53386f2ac88991a9!2sTeatro%20Col%C3%B3n!5e0!3m2!1ses!2sar!4v1649610058638!5m2!1ses!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>   
-        </article>
-
-        <article class="props props3">
-
-                <div class="props__linkimg">
-                    <img class="props__img" src="../propiedades/prop3.jpg" alt="foto propiedad 3">
-                </div>
-                
-                <div class="props__div--piframe">
                     
-                    <div class="props__title">
-                        <h3 class="props__title--title">Propiedad 3</h3>
+                    <div class="col-lg-6 col-sm-12 props__div--piframe">
+                        
+                        <div class="row props__title">
+                            <h3 class="props__title--title">Propiedad 3</h3>
+                        </div>
+
+                        <div class="row">
+                            <ul class="col props__text">
+                                <li> HERMOSA CASA EN 2 PLANTAS A METROS DEL CORREDOR LINEAL DEL METROBUS </li>
+                                <li>PLANTA BAJA:</li>
+                                <li>LIVING-COMEDOR</li>
+                                <li>COCINA-COMEDOR</li>
+                                <li>4 DORMITORIO</li>
+                                <li>BAÑO COMPLETO</li>
+                                <li>LAVADERO</li>
+                                <li>CUARTO DE GUARDADO O QUINCHO</li>
+                                <li>FONDO</li>
+                                <li>COCHERA PASANTE</li>
+                                <li> PLANTA ALTA</li>
+                                <li>3 DORMITORIOS</li>
+                                <li>BAÑO COMPLETO</li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <iframe class="props__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27832.672470271697!2d-58.3760848395298!3d-34.6087638471071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53386f2ac88991a9!2sTeatro%20Col%C3%B3n!5e0!3m2!1ses!2sar!4v1649610058638!5m2!1ses!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="container props__reverse props4">
+                <div class="row">
+                
+                    <div class="col-lg-6 col-sm-12 props__div--piframe">
+                        
+                        <div class="row props__title">
+                            <h3 class="col props__title--title">Propiedad 4</h3>
+                        </div>
+                        
+                        <div class="row">
+                            <ul class="col props__text">
+                                <li> DEPARTAMENTOS ALTA GAMA</li>
+                                <li>6 PISOS - 3 DEPARTAMENTOS POR PISO</li>
+                                <li>COCHERA</li>
+                                <li>BAULERA OPTATIVA</li>
+                                <li>S.U.M ACUSTICO EN PLANTA BAJA</li>
+                                <li> DETALLES DE CATEGORIA</li>
+                                <li>AMPLIO LIVING COMEDOR</li>
+                                <li>COCINA SEPARADA DELIMITADA POR PUERTA DOBLE CORREDIZA</li>
+                                <li>IMPONENTE BALCON ATERRAZADO CON PARRILLA</li>
+                                <li>LAVADERO SEPARADO</li>
+                                <li>2 DORMITORIOS UNO EN SUITE CON VERSTIDOR</li>
+                                <li>BAÑO COMPELTO</li>
+                                <li>CALEFACCION POR RADIADOR</li>
+                                <li>REJA Y ALARMA PERIMETRAL</li>
+                                <li>PREINSTALCION DE ALRMA INDIVIDUAL EN CADA UNIDAD</li>
+                                <li>PREINSTALACION AA</li>
+                            </ul>
+                        </div>
+
+                        <div class="row">
+                            <iframe class="col props__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5137.906472213531!2d-58.37486048594904!3d-34.61030723648753!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9c134355bc3%3A0xe7611c1602820d34!2sCatedral%20Metropolitana%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1649610103542!5m2!1ses!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-sm-12 props__linkimg">
+                        <img class="props__img" src="../propiedades/prop4.jpg" alt="foto propiedad 4">
                     </div>
 
-                        <ul class="props__text">
-                            <li> HERMOSA CASA EN 2 PLANTAS A METROS DEL CORREDOR LINEAL DEL METROBUS </li>
-                            <li>PLANTA BAJA:</li>
-                            <li>LIVING-COMEDOR</li>
-                            <li>COCINA-COMEDOR</li>
-                            <li>4 DORMITORIO</li>
-                            <li>BAÑO COMPLETO</li>
-                            <li>LAVADERO</li>
-                            <li>CUARTO DE GUARDADO O QUINCHO</li>
-                            <li>FONDO</li>
-                            <li>COCHERA PASANTE</li>
-                            <li> PLANTA ALTA</li>
-                            <li>3 DORMITORIOS</li>
-                            <li>BAÑO COMPLETO</li>
-                        </ul>
-                    <iframe class="props__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27832.672470271697!2d-58.3760848395298!3d-34.6087638471071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53386f2ac88991a9!2sTeatro%20Col%C3%B3n!5e0!3m2!1ses!2sar!4v1649610058638!5m2!1ses!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-        </article>
-
-        <article class="props__reverse props4">
-                
-            <div class="props__linkimg">
-                <img class="props__img" src="../propiedades/prop4.jpg" alt="foto propiedad 4">
-            </div>
-            
-            <div class="props__div--piframe">
-                <div class="props__title">
-                    <h3 class="props__title--title">Propiedad 4</h3>
-                </div>
-
-                <ul class="props__text">
-                    <li> DEPARTAMENTOS ALTA GAMA</li>
-                    <li>6 PISOS - 3 DEPARTAMENTOS POR PISO</li>
-                    <li>COCHERA</li>
-                    <li>BAULERA OPTATIVA</li>
-                    <li>S.U.M ACUSTICO EN PLANTA BAJA</li>
-                    <li> DETALLES DE CATEGORIA</li>
-                    <li>AMPLIO LIVING COMEDOR</li>
-                    <li>COCINA SEPARADA DELIMITADA POR PUERTA DOBLE CORREDIZA</li>
-                    <li>IMPONENTE BALCON ATERRAZADO CON PARRILLA</li>
-                    <li>LAVADERO SEPARADO</li>
-                    <li>2 DORMITORIOS UNO EN SUITE CON VERSTIDOR</li>
-                    <li>BAÑO COMPELTO</li>
-                    <li>CALEFACCION POR RADIADOR</li>
-                    <li>REJA Y ALARMA PERIMETRAL</li>
-                    <li>PREINSTALCION DE ALRMA INDIVIDUAL EN CADA UNIDAD</li>
-                    <li>PREINSTALACION AA</li>
-                </ul>
-                <iframe class="props__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5137.906472213531!2d-58.37486048594904!3d-34.61030723648753!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9c134355bc3%3A0xe7611c1602820d34!2sCatedral%20Metropolitana%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1649610103542!5m2!1ses!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        
-        </article>
+            </article>
         </div>
     </main>
+    
+        <footer class="footer">
+            
+            <div class="footer__button footer__button1" >
+                <a href="../index.html" class="footer__button--link">Home</a>
+            </div>
 
-    <footer class="footer">
-        
-        <div class="footer__button footer__button1" >
-            <a href="../index.html" class="footer__button--link">Home</a>
-        </div>
+            <div class="footer__button footer__button2">    
+                <a href="../pages/propiedades.html" class="footer__button--link">Propiedades</a>
+            </div>
 
-        <div class="footer__button footer__button2">    
-            <a href="../pages/propiedades.html" class="footer__button--link">Propiedades</a>
-        </div>
+            <div class="footer__button footer__button3">
+                <a href="../pages/nosotros.html" class="footer__button--link">Nosotros</a>
+            </div>
 
-        <div class="footer__button footer__button3">
-            <a href="../pages/nosotros.html" class="footer__button--link">Nosotros</a>
-        </div>
+            <div class="footer__button footer__button4">
+                <a href="../pages/contacto.html" class="footer__button--link">Contacto</a>
+            </div>
 
-        <div class="footer__button footer__button4">
-            <a href="../pages/contacto.html" class="footer__button--link">Contacto</a>
-        </div>
-
-<div class="footer__redes">
-    <h3 class="redes__title">LA INMOBILIARIA</h3>
-</div>
-<div class="redes__redes">
-<div class="redes">
-    <a href="https://facebook.com" target="_blank" class="redes__link">
-        <img src="../archivos/facebookicon.png" alt="facebook icon" class="redes__img">               
-    </a>
-</div>
-<div class="redes">
-    <a href="https://instagram.com" target="_blank" class="redes__link">
-        <img src="../archivos/instagramicon.png" alt="instagram icon" class="redes__img">               
-    </a>
-</div>
-<div class="redes">
-    <a href="https://twitter.com" target="_blank" class="redes__link">
-        <img src="../archivos/twittericon.png" alt="twitter icon" class="redes__img">               
-    </a>
-</div>
-</div>
-</footer>
-</div>
+            <div class="footer__redes">
+                <h3 class="redes__title">LA INMOBILIARIA</h3>
+            </div>
+            
+            <div class="redes__redes">
+                <div class="redes">
+                    <a href="https://facebook.com" target="_blank" class="redes__link">
+                        <img src="../archivos/facebookicon.png" alt="facebook icon" class="redes__img">               
+                    </a>
+                </div>
+                <div class="redes">
+                    <a href="https://instagram.com" target="_blank" class="redes__link">
+                        <img src="../archivos/instagramicon.png" alt="instagram icon" class="redes__img">               
+                    </a>
+                </div>
+                <div class="redes">
+                    <a href="https://twitter.com" target="_blank" class="redes__link">
+                        <img src="../archivos/twittericon.png" alt="twitter icon" class="redes__img">               
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
