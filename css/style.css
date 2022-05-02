@@ -435,10 +435,15 @@ html {
     max-height: 100%;
 }
 
-@media (max-width: 360px) {
 
+@media (max-width: 768px) {
+    
+    .navbar-brand {
+        height: 50% !important;
+    }
+    
     .main {
-        grid-template-rows: 3% 17% 38% 4% 38%;
+        grid-template-rows: 6% 22% 30% 4% 38%;
     }
     .bottom {
         font-size: 90%;
@@ -453,10 +458,10 @@ html {
         width: 100%;
         height: 85%;
     }
-
+    
     .forms {
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         font-size: 80%;
     }
     
@@ -466,45 +471,46 @@ html {
     }
     
     .precio__desde {
-        width: 50%;
+        width: 10%;
     }
     
     .precio__hasta {
-        width: 50%;
+        width: 10%;
     }
 
     .submit_reset {
-        width: 30%;
+        font-size: 100%;
+        
     }
 
     .submit_resett {
-        width: 40%;
+        font-size: 100%;
     }
 
     .destacadas__title {
-        font-size: 80%;
+        font-size: 65%;
     }
     
     .uno__img {
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
     }
     
     .dos__img {
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
     }
     .tres__img {
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
     }
     .cuatro__img {
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
     }
     
     .footer {
-        grid-template-rows: 27% 16% 17% 35% 1%;
+        grid-template-rows: 27% 16% 17% 35% 3%;
         grid-template-columns: 50% 50%;
         grid-template-areas: 
             "titulo titulo"
@@ -520,7 +526,7 @@ html {
     .footer__redes{
         grid-area: titulo;
         width: 100%;
-        margin-right: 3%;
+        margin-right: ;
         margin-top: 2%;
     }
 
@@ -530,8 +536,8 @@ html {
     }
 
     .redes__img {
-        width: 90%;
-        height: 90%;
+        width: 85%;
+        height: 85%;
     }
 
     .redes {
@@ -539,7 +545,7 @@ html {
         flex-direction: row;
         justify-content: space-evenly;
     }
-
+    
     .props__img {
         width: 250px;
         height: 150px;
@@ -588,5 +594,160 @@ html {
     .row {
         grid-template-rows: 5% 5% 5% 5% 5%;
         grid-template-columns: 10% 10%;
+    }
+    @media (max-width: 360px) {
+    
+        .main {
+            grid-template-rows: 3% 15% 38% 4% 45%;
+        }
+        .bottom {
+            font-size: 90%;
+        }
+        
+        .fotoprincipal {
+            max-width: 100%;
+            
+        }
+    
+        .fotoprincipal__img {
+            width: 100%;
+            height: 85%;
+        }
+    
+        .forms {
+            flex-direction: column;
+            justify-content: flex-start;
+            font-size: 80%;
+        }
+        
+        .forms__titles {
+            margin-bottom: 3%;
+            font-size: 130%;
+        }
+        
+        .precio__desde {
+            width: 50%;
+        }
+        
+        .precio__hasta {
+            width: 50%;
+        }
+    
+        .submit_reset {
+            width: 30%;
+        }
+    
+        .submit_resett {
+            width: 40%;
+        }
+    
+        .destacadas__title {
+            font-size: 80%;
+        }
+        
+        .uno__img {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .dos__img {
+            width: 100px;
+            height: 100px;
+        }
+        .tres__img {
+            width: 100px;
+            height: 100px;
+        }
+        .cuatro__img {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .footer {
+            grid-template-rows: 27% 16% 17% 35% 1%;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: 
+                "titulo titulo"
+                "fb1 fb2"
+                "fb3 fb4"
+                "redes redes"
+                "volver volver";
+            height: auto;
+            align-items: center;
+            justify-items: center;
+        }
+    
+        .footer__redes{
+            grid-area: titulo;
+            width: 100%;
+            margin-right: 3%;
+            margin-top: 2%;
+        }
+    
+        .redes__redes {
+            justify-content: center ;
+            width: 100%;
+        }
+    
+        .redes__img {
+            width: 90%;
+            height: 90%;
+        }
+    
+        .redes {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    
+        .props__img {
+            width: 250px;
+            height: 150px;
+            padding-top: 5%;
+        }
+    
+        .props__text {
+            font-size: 80%;
+        }
+    
+        .props__iframe {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    
+        .mision {
+            font-size: 80%;
+            width: 95%;
+            margin-top: 1%;
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+        
+        .mision__title {
+            font-size: medium;
+        }
+        
+        .horarios {
+            display: flex;
+            flex-direction: column;
+            border-collapse: collapse;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+    
+        .img__img {
+            width: 150px;
+            height: 150px;
+        }
+    
+        .general {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .row {
+            grid-template-rows: 5% 5% 5% 5% 5%;
+            grid-template-columns: 10% 10%;
+        }
     }
 }
