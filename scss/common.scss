@@ -1,0 +1,130 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html { 
+    font-size: 62.5%;
+}
+
+.body{
+    height: 100vh;
+    background-color: lightgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Aca empieza el header */
+.logo__img{
+    transform: scale(0.6);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.logo__img:hover{
+    transform: scale(0.7);
+}
+
+.logo__link {
+    display: flex;
+    align-items: center; 
+}
+
+.logo__title {
+    color: gray;
+    font-size: 1.4rem;
+}
+
+.estilo__div {
+    height: 100px;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: white;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.menu__link:hover {
+    font-weight: bolder;
+    border-bottom: solid 1px white;
+}
+
+.nav-item {
+    padding-right: 1%;
+}
+
+/* Aca empieza el footer */
+
+.footer {
+    background-color: black; 
+    color: white;
+    grid-area: footer;
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-columns: 18% 18% 18% 18% 28%;
+    grid-template-areas: 
+        "fb1 fb2 fb3 fb4 titulo"
+        "fb1 fb2 fb3 fb4 redes"
+        "fb1 fb2 fb3 fb4 volver";
+    width: 100%;
+    height: auto;
+}
+
+.footer__button1 {
+    grid-area: fb1;
+}
+.footer__button2 {
+    grid-area: fb2;
+}
+.footer__button3 {
+    grid-area: fb3;
+}
+.footer__button4 {
+    grid-area: fb4;
+}
+.redes__title {
+    grid-area: titulo;
+}
+.redes__redes {
+    grid-area: redes;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 80%;
+    margin-top: 3%;
+}
+
+.redes__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 75%;
+    color: gray;
+}
+
+.redes {
+    margin-left: 5%;
+}
+
+.footer__button {
+    align-self: center;
+    justify-self: center;
+}
+
+.footer__button--link {
+    text-decoration: none;
+    color: gray;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.footer__button--link:hover {
+    font-weight: bolder;
+    border-bottom: solid 1px gray;
+    color: gray;
+}
+/* Aca termina el footer */

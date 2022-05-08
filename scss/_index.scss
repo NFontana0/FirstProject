@@ -1,0 +1,146 @@
+/* Seccion Home */
+.main {
+    grid-area: main;
+    background-color: lightgray;
+    display: grid;
+    grid-template-rows: 3% 22% 8% 4% 60%;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+        "consu"
+        "foto"
+        "form"
+        "desta"
+        "prop";
+}
+
+.bottom {
+    grid-area: consu;
+    text-decoration: none;
+    color: black;
+    justify-self: center;
+    align-self: center;
+}
+
+.fotoprincipal {
+    grid-area: foto;
+}   
+
+.fotoprincipal__img {
+    width: 100%;
+    height: 90%;
+}
+
+.forms {
+    grid-area: form;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0% 15% 0% 15%;    
+}
+
+.forms__titles {
+    font-size:large;
+    font-weight: bold;
+}
+
+.forms__venta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.precio__desde {
+    border-style: inset;
+    border-width: 3px;
+}
+
+.precio__hasta {
+    border-style: inset;
+    border-width: 3px;
+}
+
+.submit_reset {
+    border-style: inset;
+    border-width: 3px;
+    font-size: medium;
+    color: white;
+    background-color: black;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.submit_resett {
+    border-style: inset;
+    border-width: 3px;
+    font-size: medium;
+    color: white;
+    background-color: black;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.submit_reset:hover {
+    background-color: white;
+    color: black;
+}
+
+.submit_resett:hover {
+    background-color: white;
+    color: black;
+}
+
+.destacadas__title {
+    grid-area: desta;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.destacadas {
+    grid-area: prop;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+        "foto1 foto1"
+        "foto2 foto2";
+        width: 100%;
+        height: 100%;
+}
+
+.fotosdestacadas12 {
+    grid-area: foto1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 30%;
+
+}
+
+.fotosdestacadas34 {
+    grid-area: foto2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.uno__img {
+    width: 500px;
+    height: 500px;
+}
+
+.dos__img {
+    width: 500px;
+    height: 500px;
+}
+.tres__img {
+    width: 500px;
+    height: 500px;
+}
+.cuatro__img {
+    width: 500px;
+    height: 500px;
+}
