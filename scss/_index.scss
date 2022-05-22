@@ -1,4 +1,10 @@
 /* Seccion Home */
+
+@mixin img {
+    width: 500px;
+    height: 500px;
+}
+
 .main {
     grid-area: main;
     background-color: lightgray;
@@ -72,14 +78,7 @@
 }
 
 .submit_resett {
-    border-style: inset;
-    border-width: 3px;
-    font-size: medium;
-    color: white;
-    background-color: black;
-    transition-property: all;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
+    @extend .submit_reset;
 }
 
 .submit_reset:hover {
@@ -128,19 +127,15 @@
 }
 
 .uno__img {
-    width: 500px;
-    height: 500px;
+    @include img;
 }
 
 .dos__img {
-    width: 500px;
-    height: 500px;
+    @include img;
 }
 .tres__img {
-    width: 500px;
-    height: 500px;
+    @include img;
 }
 .cuatro__img {
-    width: 500px;
-    height: 500px;
+    @include img;
 }

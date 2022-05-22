@@ -13,6 +13,35 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+$padding: (
+    1: 1%,
+    2: 2%,
+    3: 3%,
+    4: 4%,
+    5: 5%
+);
+
+$margin: (
+    1: 1%,
+    2: 2%,
+    3: 3%,
+    4: 4%,
+    5: 5%
+
+);
+
+@each $numero, $porcentaje in $padding{
+    .p-#{$numero}{
+        padding: $porcentaje;
+    }
+}
+
+@each $numero, $porcentaje in $margin{
+    .m-#{$numero}{
+        padding: $porcentaje;
+    }
+}
+
 /* Aca empieza el header */
 .logo__img{
     transform: scale(0.6);
